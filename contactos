@@ -1,0 +1,231 @@
+package login2bv;
+
+import javax.swing.DefaultListModel;
+
+
+public class Contactos extends javax.swing.JInternalFrame {
+DefaultListModel model=new DefaultListModel<>();
+    private String valor;
+    private int posicion;
+    private String nombre;
+    private String ciudad;
+    private String telefono;
+    private String correo;
+ 
+
+    
+    public Contactos() {
+        initComponents();
+    }
+
+    
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        jTextNombre = new javax.swing.JTextField();
+        jTextDireccion = new javax.swing.JTextField();
+        jTextTelefono = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        jTextCorreo = new javax.swing.JTextField();
+        jfGuardar = new javax.swing.JButton();
+        jfActualizar = new javax.swing.JButton();
+        jfEliminar = new javax.swing.JButton();
+        Salir = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+
+        setClosable(true);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextNombre.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jTextNombre.setBorder(null);
+        jTextNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextNombreActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 180, 380, -1));
+
+        jTextDireccion.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jTextDireccion.setBorder(null);
+        jTextDireccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextDireccionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 380, -1));
+
+        jTextTelefono.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jTextTelefono.setBorder(null);
+        jPanel1.add(jTextTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 270, 380, -1));
+
+        jList1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jList1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList1MouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jList1);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, 570, 190));
+
+        jTextCorreo.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jTextCorreo.setBorder(null);
+        jPanel1.add(jTextCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, 380, -1));
+
+        jfGuardar.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jfGuardar.setText("Guardar");
+        jfGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jfGuardarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jfGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 660, -1, -1));
+
+        jfActualizar.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jfActualizar.setText("Actualizar");
+        jfActualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jfActualizarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jfActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 660, -1, -1));
+
+        jfEliminar.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jfEliminar.setText("Eliminar");
+        jfEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jfEliminarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jfEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 660, -1, -1));
+
+        Salir.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        Salir.setText("Salir");
+        Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalirActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 660, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Blackadder ITC", 1, 24)); // NOI18N
+        jLabel5.setText("Correo");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Blackadder ITC", 1, 24)); // NOI18N
+        jLabel4.setText("Telefono ");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Blackadder ITC", 1, 24)); // NOI18N
+        jLabel3.setText("Direccion");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Blackadder ITC", 1, 24)); // NOI18N
+        jLabel2.setText("Nombre");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/e5c91ddc553e0c84c72b7f86cc341664.jpg"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 750));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 380, -1));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void jTextNombreActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+    }                                           
+
+    private void jTextDireccionActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        // TODO add your handling code here:
+    }                                              
+
+    private void jList1MouseClicked(java.awt.event.MouseEvent evt) {                                    
+        // TODO add your handling code here:
+        valor = jList1.getSelectedValue().toString();
+        posicion=jList1.getSelectedIndex();
+        System.out.println("Valor Item"+valor);
+
+        String[] elemento = valor.split("");
+        nombre = elemento[0];
+        ciudad = elemento[1];
+        telefono = elemento[2];
+        correo = elemento[3];
+        jTextNombre.setText(nombre);
+        jTextDireccion.setText(ciudad);
+        jTextTelefono.setText(telefono);
+        jTextCorreo.setText(correo);
+    }                                   
+
+    private void jfGuardarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+        // TODO add your handling code here:
+        jList1.setModel(model);
+        model.addElement(jTextNombre.getText()+' '+jTextDireccion.getText()+' '+jTextTelefono.getText()
+            +' '+jTextCorreo.getText());
+        jTextNombre.setText(" ");
+        jTextDireccion.setText(" ");
+        jTextTelefono.setText(" ");
+        jTextCorreo.setText(" ");
+        jTextNombre.requestFocus();
+
+    }                                         
+
+    private void jfActualizarActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // boton actualizar
+        valor = jTextNombre.getText()+' '+jTextDireccion.getText()+' '+jTextTelefono.getText()+' '+jTextCorreo.getText();
+
+        model.set(posicion,valor);
+    }                                            
+
+    private void jfEliminarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // boton eliminar
+        model.remove(posicion);
+    }                                          
+
+    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // boton salir
+        this.hide();
+    }                                     
+
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton Salir;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextField jTextCorreo;
+    private javax.swing.JTextField jTextDireccion;
+    private javax.swing.JTextField jTextNombre;
+    private javax.swing.JTextField jTextTelefono;
+    private javax.swing.JButton jfActualizar;
+    private javax.swing.JButton jfEliminar;
+    private javax.swing.JButton jfGuardar;
+    // End of variables declaration                   
+}
